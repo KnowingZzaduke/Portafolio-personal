@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+*,*::before,
+*::after{
+    padding: 0% auto;
+    margin: 0% auto;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4{
+    font-family: v.$fuente-titulo;
+}
+
+p{
+    font-family: v.$fuente-parrafo;
+}
+
+ 
+  
+  

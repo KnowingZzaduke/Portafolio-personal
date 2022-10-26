@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="content_logos">
+                <video src="/videos/logo-black.mp4" autoplay muted style="width: 80px;" class="logo_black"></video>
+                <video src="/videos/logo-white.mp4" autoplay muted style="width: 80px; display: none;" class="logo_white"></video>
+            </div>
+            <div class="content_enlaces">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#content_about-me">Sobre mi</a></li>
+                    <li><a href="#section_proyects">Proyectos</a></li>
+                    <li><a href="#section_contact">Contacto</a></li>          
+                </ul>
+            </div>
+            
+
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                  <span>
+                    <img src="/src/img/menu.png" alt="hamburguesa" class="menu_hamburguesa">
+                  </span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#content_about-me">Sobre mi</a></li>
+                        <li><a href="#section_proyects">Proyectos</a></li>
+                        <li><a href="#section_contact">Contacto</a></li>          
+                    </ul>
+                  </div>
+                </div>
+                <div class="button_moon">
+                    <img src="/src/img/luna.png" alt="Luna" id="dark_mode-small">
+                    <img src="/src/img/sol.png" alt="sol" id="light_mode-small" style="display: none;">
+                </div>
+              </div>
+            
+            
+
+            <div class="button_moon">
+                <img src="/src/img/luna.png" alt="Luna" id="dark_mode">
+                <img src="/src/img/sol.png" alt="sol" id="light_mode" style="display: none;">
+            </div>
+        </nav>
+
+        <div class="content_about-me" id="content_about-me">
+            <div class="content_info">
+                <h1>Sobre mi</h1>
+                <p>Saludos👋 estimados, mi nombre es Jose Luis Arteta Buelvas, me encuentro en formación como desarrollador frontend, utilizando las tecnologías <b>Html</b>, <b>Css</b>, <b>Sass</b> <b>JavaScript</b> y <b>Boostrap</b>, me apasiona mucho aprender cosas nuevas cada día que aporten gran valor a mi vida y al mundo. Me interesa todo lo relacionado con la tecnología, me gusta trabajar en equipo y conocer nuevas personas</p>
+                <div class="content_icon">
+                    <a href="https://github.com/KnowingZzaduke" target="_blank"><img src="/src/img/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-luis-arteta-buelvas-520637253/" target="_blank"><img src="/src/img/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+            
+            <div class="content_ilus">
+                <img src="/src/img/Humaaans - Wireframe.png" alt="human">
+            </div>
+        </div>
+
+    </header>
+
+    <section class="section_skill" id="section_skill">
+        <div class="content_all-skill">
+            <div>
+                <h1>My skills</h1>
+            </div>
+
+            <div class="content_skills">
+                <div class="skill_1">
+                    <img src="/src/img/html.png" alt="html">
+                    <p class="html" style="display: none;">Buenos conocimientos en <b>HTML</b></p>
+                </div>
+
+                <div class="skill_2">
+                    <img src="/src/img/css-3.png" alt="css">
+                    <p class="css" style="display: none;">Buenos conocimientos en <b>CSS</b></p>                                
+                </div>
+
+                <div class="skill_3">
+                    <img src="/src/img/sass.png" alt="sass">
+                    <p class="sass" style="display: none;">Buenos conocimientos en <b>SASS</b></p>
+                </div>
+
+                <div class="skill_4">
+                    <img src="/src/img/js.png" alt="js">     
+                    <p class="javascript" style="display: none;">Conocimientos Básicos en <b>JAVASCRIPT</b></p>           
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_proyects" id="section_proyects">
+        <div class="content_all-proyects">
+            <div class="h">
+                <h1>Proyectos</h1>
+            </div>
+
+            <div class="content_proyects">
+                <div class="proyect">
+                    <h3>Portafolio</h3>
+                    <div class="content_logo">
+                        <video src="/videos/jose-logo-black.mp4" muted></video>
+                    </div>
+                    <div class="content_icons">
+                        <a href="#"><img src="/src/img/github.png" alt="github" title="Github"></a>
+                        <a href="#"><img src="/src/img/enviar.png" alt="enviar" title="Ir a Actorador"></a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <h3>Luis Buelvas Coach</h3>
+                    <div class="content_logo">
+                        <video src="/videos/Lb.mp4"muted></video>
+                    </div>
+                    <div class="content_icons">
+                        <a href="#"><img src="/src/img/github.png" alt="github" title="Github"></a>
+                        <a href="#"><img src="/src/img/enviar.png" alt="enviar" title="Ir a Luis Coach"></a>
+                    </div>
+                </div>
+
+                <div class="proyect">
+                    <h3>Whatssive</h3>
+                    <div class="content_logo">
+                        <video src="/videos/Whatssive.mp4" muted></video>
+                    </div>
+                    <div class="content_icons">
+                        <a href="#"><img src="/src/img/github.png" alt="github" title="Github"></a>
+                        <a href="#"><img src="/src/img/enviar.png" alt="enviar" title="Ir a Whatssive"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_contact" id="section_contact">
+        <div class="content_all-contact">
+            <div class="c">
+                <h1>Contacto</h1>
+            </div>
+
+            <div class="content_contact">
+                <div class="contact">
+                    <div class="content_icon">
+                        <img src="/src/img/mapas-de-google.gif" alt="">
+                    </div>
+
+                    <div class="content_info-contact">
+                        <h4>Dirección</h4>
+                        <p>Colombia, Cartagena de indias <br> Barrio el Quindío, Cra 62 Mzn 2 Lt47</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div class="content_icon">
+                        <img src="/src/img/mensaje.gif" alt="mensaje">
+                    </div>
+
+                    <div class="content_info-contact">
+                        <h4>Email</h4>
+                        <a href="#"><p>josex.developer@gmail.com</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content_footer">
+            <a href="#"><img src="/src/img/github.png" alt="icono" title="Github"></a>
+            <a href="#"><img src="/src/img/linkedin.png" alt="icono" title="Linkedin"></a>
+        </div>
+
+        <p>Copyright &copy; 2022 José Luis Arteta Buelvas</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/src/Js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

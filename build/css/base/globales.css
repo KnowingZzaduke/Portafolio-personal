@@ -1,0 +1,13 @@
+*, *::before,
+*::after {
+  padding: 0% auto;
+  margin: 0% auto;
+}
+
+h1, h2 {
+  font-family: "PT Sans", sans-serif, "Roboto", sans-serif, "Source Sans Pro", sans-serif;
+}
+
+p {
+  font-size: "Roboto", sans-serif;
+}

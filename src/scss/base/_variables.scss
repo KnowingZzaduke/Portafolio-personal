@@ -1,0 +1,35 @@
+//Paleta de colores
+$blanco: white;
+$negro: black;
+$verde: green;
+$rosa : #F5B7B1;
+$rosa2:  #f1948a ;
+$gris: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,240,247,1) 0%, rgba(227,232,233,1) 100%);
+$azul-oscuro:  #21263d ;
+
+//Tamaño para los media queries
+
+$phone: 480px;
+$tablet-min: 481px;
+$tablet-max: 768px;
+$desktop: 992px;
+$desktopXl: 1200px; 
+
+//Fuente de letras
+$fuente-titulo:
+    'PT Sans', sans-serif,  
+    'Roboto', sans-serif,
+    'Source Sans Pro', sans-serif;
+
+$fuente-parrafo:'Roboto', sans-serif;
+
+//Tamaño de fuentes
+$big-titulo: 2.5rem;
+$big-parrafo: 1.2rem;
+
+//Tamaño de iconos
+$small: 30px;
+$mediano: 8rem;
+
+//Tamaño videos
+
