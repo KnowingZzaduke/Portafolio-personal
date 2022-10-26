@@ -111,16 +111,16 @@ skill4.addEventListener('click', function(j){
 
 // Funcion del scrolling
 
-function scrolling(){
-    const enlaces = document.querySelectorAll('.navbar a');
-    enlaces.forEach(function(enlace){
-        enlace.addEventListener('click', function(scroll){
-            scroll.preventDefault();
-            enlaces.scrollIntoView({ behavior: "smooth"});
-        });
-    });
+// function scrolling(){
+//     const enlaces = document.querySelectorAll('.navbar a');
+//     enlaces.forEach(function(enlace){
+//         enlace.addEventListener('click', function(scroll){
+//             scroll.preventDefault();
+//             enlaces.scrollIntoView({ behavior: "smooth"});
+//         });
+//     });
 
-}
+// }
 
 
 // Función para mostrar elementos
