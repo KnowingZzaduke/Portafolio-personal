@@ -11,6 +11,10 @@ const containsSmall = document.getElementById('dark_mode-small');
 const contains2Small = document.getElementById('light_mode-small');
 const logoBlack = document.querySelector('.logo_black');
 const logoWhite = document.querySelector('.logo_white');
+const toggleAbrir = document.querySelector('.menu_hamburguesa');
+const toggleCerrar = document.querySelector('.cerrar');
+const navbarSmall = document.querySelector('.content_menu-desplegable');
+const sections = document.querySelectorAll('section');
 
 contains.addEventListener('click', function(event){
     if(event){
@@ -22,7 +26,7 @@ contains.addEventListener('click', function(event){
         skill.classList.replace('section_skill' , 'section_skill-dark');
         proyect.classList.replace('section_proyects', 'section_proyects-dark');
         contact.classList.replace('section_contact' , 'section_contact-dark');
-        cerrar.classList.replace('btn-close-white', 'btn-close-black');
+        // cerrar.classList.replace('btn-close-white', 'btn-close-black');
         logoBlack.style.display = ('none');
         logoWhite.style.display = ('block');
 }
@@ -38,40 +42,63 @@ contains2.addEventListener('click', function(event2){
         skill.classList.replace('section_skill-dark', 'section_skill');
         proyect.classList.replace('section_proyects-dark', 'section_proyects',);
         contact.classList.replace('section_contact-dark', 'section_contact');
-        cerrar.classList.replace('btn-close-black', 'btn-close-white');
+        // cerrar.classList.replace('btn-close-black', 'btn-close-white');
         logoWhite.style.display = ('none');
         logoBlack.style.display = ('block');
     }
 })
 
-containsSmall.addEventListener('click', function(events){
-    if(events){
-        containsSmall.style.display = ('none');
-        contains2Small.style.display = ('block');
-        header.style.background = ('black');
-        navbar.classList.replace('navbar', 'navbar_dark');
-        about.classList.replace('content_about-me', 'content_about-me-dark');
-        skill.classList.replace('section_skill' , 'section_skill-dark');
-        proyect.classList.replace('section_proyects', 'section_proyects-dark');
-        contact.classList.replace('section_contact' , 'section_contact-dark');
-        cerrar.classList.replace('btn-close-white', 'btn-close-black');
-}
-})
-
-contains2Small.addEventListener('click', function(event2s){
-    if(event2s){
-        contains2Small.style.display = ('none');
-        containsSmall.style.display = ('block');
-        header.style.background = ('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,240,247,1) 0%, rgba(227,232,233,1) 100%)');
-        navbar.classList.replace('navbar_dark','navbar');
-        about.classList.replace('content_about-me-dark', 'content_about-me');
-        skill.classList.replace('section_skill-dark', 'section_skill');
-        proyect.classList.replace('section_proyects-dark', 'section_proyects',);
-        contact.classList.replace('section_contact-dark', 'section_contact');
-        cerrar.classList.replace('btn-close-black', 'btn-close-white');
-
+toggleAbrir.addEventListener('click', function abrir(){
+    if(abrir){
+        navbarSmall.style.display = ('block');
     }
 })
+
+toggleCerrar.addEventListener('click', function(cerrar){
+    if(cerrar){
+        navbarSmall.style.display = ('none');
+    }
+})
+
+
+function section(){
+    navbarSmall.style.display = ('none');
+}
+sections.forEach(item =>item.addEventListener('click', section));
+
+
+
+
+
+
+//  containsSmall.addEventListener('click', function(events){
+//      if(events){
+//          containsSmall.style.display = ('none');
+//          contains2Small.style.display = ('block');
+//          header.style.background = ('black');
+//          navbar.classList.replace('navbar', 'navbar_dark');
+//          about.classList.replace('content_about-me', 'content_about-me-dark');
+//          skill.classList.replace('section_skill' , 'section_skill-dark');
+//          proyect.classList.replace('section_proyects', 'section_proyects-dark');
+//          contact.classList.replace('section_contact' , 'section_contact-dark');
+//         //  cerrar.classList.replace('btn-close-white', 'btn-close-black');
+//  }
+//  })
+
+//  contains2Small.addEventListener('click', function(event2s){
+//      if(event2s){
+//          contains2Small.style.display = ('none');
+//          containsSmall.style.display = ('block');
+//          header.style.background = ('linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(240,240,247,1) 0%, rgba(227,232,233,1) 100%)');
+//          navbar.classList.replace('navbar_dark','navbar');
+//          about.classList.replace('content_about-me-dark', 'content_about-me');
+//          skill.classList.replace('section_skill-dark', 'section_skill');
+//          proyect.classList.replace('section_proyects-dark', 'section_proyects',);
+//          contact.classList.replace('section_contact-dark', 'section_contact');
+//         //  cerrar.classList.replace('btn-close-black', 'btn-close-white');
+
+//      }
+//  })
 
 
 
@@ -111,16 +138,16 @@ skill4.addEventListener('click', function(j){
 
 // Funcion del scrolling
 
-// function scrolling(){
-//     const enlaces = document.querySelectorAll('.navbar a');
-//     enlaces.forEach(function(enlace){
-//         enlace.addEventListener('click', function(scroll){
-//             scroll.preventDefault();
-//             enlaces.scrollIntoView({ behavior: "smooth"});
-//         });
-//     });
+//  function scrolling(){
+//      const enlaces = document.querySelectorAll('.navbar a');
+//      enlaces.forEach(function(enlace){
+//          enlace.addEventListener('click', function(scroll){
+//              scroll.preventDefault();
+//              enlaces.scrollIntoView({ behavior: "smooth"});
+//          });
+//      });
 
-// }
+//  }
 
 
 // Función para mostrar elementos
@@ -135,4 +162,8 @@ skill4.addEventListener('click', function(j){
         });
    
 })
+
+
+// Función para cerrar el menú de navegación
+
 

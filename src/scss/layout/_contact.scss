@@ -29,7 +29,6 @@
         .content_icon{
             img{
                 width: v.$small;
-                filter: invert(100%);
             }
         }
     }
@@ -83,6 +82,12 @@
                 .contact{
                     margin-top: 2rem;
                     width: auto;
+                    .content_icon{
+                        img{
+                            position: absolute;
+                            filter: invert(100%);
+                        }
+                    }
                 }
             }
         }
@@ -185,6 +190,11 @@
                 .contact{
                     margin-top: 2rem;
                     width: auto;
+                    .content_icon{
+                        img{
+                            position: absolute;
+                        }
+                    }
                 }
             }
         }

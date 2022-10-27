@@ -314,6 +314,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4 {
   font-family: "PT Sans", sans-serif, "Roboto", sans-serif, "Source Sans Pro", sans-serif;
 }
@@ -334,13 +338,14 @@ header {
   justify-content: center;
   height: 80px;
   padding: 0;
+  z-index: 1;
 }
 .navbar a {
   text-decoration: none;
   color: white;
 }
 .navbar ul {
-  margin-top: 10px;
+  margin-top: 30px;
   text-align: center;
   list-style: none;
   display: grid;
@@ -364,100 +369,114 @@ header {
   width: 30px;
   filter: invert(100%);
   cursor: pointer;
+  margin-top: 25px;
 }
-.navbar .container-fluid {
+.navbar .content_navbar-small {
   display: none;
-}
-.navbar .container-fluid .button_moon {
-  width: 100px;
-  margin-top: 15px;
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar .content_logos {
-    display: none;
+  .navbar {
+    position: fixed;
+    width: 100%;
   }
   .navbar .content_enlaces {
     display: none;
   }
-  .navbar .container-fluid {
-    display: block;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .navbar .container-fluid .button_moon {
-    display: block;
-    padding-right: 250px;
-    margin-bottom: 15px;
-  }
-  .navbar .button_moon {
+  .navbar .content_logos {
     display: none;
   }
-  .navbar .offcanvas-header .offcanvas-title {
-    color: white;
-  }
-  .navbar .offcanvas {
-    width: 200px;
-    background-color: black;
-  }
-  .navbar .offcanvas-body {
-    margin: 0;
-  }
-  .navbar .offcanvas-body ul {
+  .navbar .content_navbar-small {
     display: block;
-    padding: 0;
-    width: 100%;
   }
-  .navbar .offcanvas-body ul li {
-    background-color: #21263d;
-    padding: 10px 20px 10px 20px;
+  .navbar .content_navbar-small .content_menu-desplegable {
+    background-color: black;
+    transition: 0.5s ease;
+    visibility: inherit;
+    width: 200px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu {
+    display: flex;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu h4 {
+    color: white;
+    height: 30px;
+    padding-top: 25px;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu .cerrar {
+    width: 20px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
     margin-top: 10px;
-    width: 100%;
     border-radius: 5px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li a {
+    color: black;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .navbar .content_logos {
-    display: none;
+  .navbar {
+    position: fixed;
+    width: 100%;
   }
   .navbar .content_enlaces {
     display: none;
   }
-  .navbar .container-fluid {
-    display: block;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .navbar .container-fluid .button_moon {
-    display: block;
-    padding-right: 420px;
-    padding-left: auto;
-    margin-bottom: 15px;
-  }
-  .navbar .button_moon {
+  .navbar .content_logos {
     display: none;
   }
-  .navbar .offcanvas-header .offcanvas-title {
-    color: white;
-  }
-  .navbar .offcanvas {
-    width: 300px;
-    background-color: black;
-  }
-  .navbar .offcanvas-body {
-    margin: 0;
-  }
-  .navbar .offcanvas-body ul {
+  .navbar .content_navbar-small {
     display: block;
-    padding: 0;
-    width: 100%;
   }
-  .navbar .offcanvas-body ul li {
-    background-color: #21263d;
-    padding: 10px 20px 10px 20px;
-    margin-top: 10px;
-    width: 100%;
+  .navbar .content_navbar-small .content_menu-desplegable {
+    background-color: black;
+    transition: 0.5s ease;
+    visibility: inherit;
+    width: 300px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu {
+    display: flex;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu h4 {
+    color: white;
+    height: 30px;
+    padding-top: 25px;
+  }
+  .navbar .content_navbar-small .content_menu-desplegable .content_menu .cerrar {
+    width: 20px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    margin-top: 15px;
     border-radius: 5px;
+  }
+  .navbar .content_navbar-small .content_enlaces-small ul li a {
+    color: black;
   }
 }
 
@@ -473,7 +492,7 @@ header {
   color: black;
 }
 .navbar_dark ul {
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 0%;
   text-align: center;
   list-style: none;
@@ -497,171 +516,114 @@ header {
 .navbar_dark img {
   width: 30px;
   cursor: pointer;
-  margin-top: 28px;
+  margin-top: 25px;
 }
-.navbar_dark .content_enlaces {
-  justify-content: center;
-}
-.navbar_dark .container-fluid {
+.navbar_dark .content_navbar-small {
   display: none;
-}
-.navbar_dark .container-fluid .button_moon {
-  margin-top: 15px;
 }
 
 @media only screen and (max-width: 480px) {
-  .navbar_dark .content_logos {
-    display: none;
-  }
-  .navbar_dark a {
-    text-decoration: none;
-    color: white;
-  }
-  .navbar_dark ul {
-    margin-top: 18px;
-    text-align: center;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-  }
-  .navbar_dark li {
-    color: black;
-    transition: trasnform 0.2s;
-    transition: 0.25s linear;
-  }
-  .navbar_dark li:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    color: gray;
-    transform: scale(1.1);
-    transition: tex-decoration 2s;
-  }
-  .navbar_dark img {
-    margin-top: 10px;
-    margin-left: 20px;
+  .navbar_dark {
+    position: fixed;
+    width: 100%;
   }
   .navbar_dark .content_enlaces {
     display: none;
   }
-  .navbar_dark .menu_hamburguesa {
-    padding-right: 15px;
-    margin-top: 0;
-    width: 45px;
-  }
-  .navbar_dark .container-fluid {
-    display: block;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .navbar_dark .container-fluid .button_moon {
-    display: block;
-    padding-right: 250px;
-    padding-left: auto;
-  }
-  .navbar_dark .button_moon {
+  .navbar_dark .content_logos {
     display: none;
   }
-  .navbar_dark .offcanvas-header .offcanvas-title {
-    color: black;
-    text-align: center;
-  }
-  .navbar_dark .offcanvas {
-    width: 200px;
-    background-color: white;
-  }
-  .navbar_dark .offcanvas-body {
-    margin: 0;
-  }
-  .navbar_dark .offcanvas-body ul {
+  .navbar_dark .content_navbar-small {
     display: block;
-    padding: 0;
-    width: 100%;
   }
-  .navbar_dark .offcanvas-body ul li {
-    background-color: #21263d;
-    padding: 10px 20px 10px 20px;
+  .navbar_dark .content_navbar-small .content_menu-desplegable {
+    background-color: white;
+    transition: 0.5s ease;
+    visibility: inherit;
+    width: 200px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu {
+    display: flex;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu h4 {
+    color: black;
+    height: 30px;
+    padding-top: 25px;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu .cerrar {
+    width: 20px;
+  }
+  .navbar_dark .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar_dark .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: black;
     margin-top: 10px;
-    width: 100%;
     border-radius: 5px;
   }
-  .navbar_dark .offcanvas-body ul li a {
+  .navbar_dark .content_navbar-small .content_enlaces-small ul li a {
     color: white;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .navbar_dark .content_logos {
-    display: none;
-  }
-  .navbar_dark a {
-    text-decoration: none;
-    color: white;
-  }
-  .navbar_dark ul {
-    margin-top: 18px;
-    text-align: center;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-  }
-  .navbar_dark li {
-    color: black;
-    transition: trasnform 0.2s;
-    transition: 0.25s linear;
-  }
-  .navbar_dark li:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    color: gray;
-    transform: scale(1.1);
-    transition: tex-decoration 2s;
-  }
-  .navbar_dark img {
-    margin-top: 10px;
+  .navbar_dark {
+    position: fixed;
+    width: 100%;
   }
   .navbar_dark .content_enlaces {
     display: none;
   }
-  .navbar_dark .container-fluid {
-    display: block;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .navbar_dark .container-fluid .navbar-toggler {
-    margin: 0%;
-    padding-right: 10px;
-    padding-bottom: 8px;
-  }
-  .navbar_dark .container-fluid .button_moon {
-    display: block;
-    padding-right: 420px;
-    width: 50px;
-  }
-  .navbar_dark .button_moon {
+  .navbar_dark .content_logos {
     display: none;
   }
-  .navbar_dark .offcanvas-header .offcanvas-title {
-    color: black;
-  }
-  .navbar_dark .offcanvas {
-    width: 300px;
-    background-color: white;
-  }
-  .navbar_dark .offcanvas-body {
-    margin: 0;
-  }
-  .navbar_dark .offcanvas-body ul {
+  .navbar_dark .content_navbar-small {
     display: block;
-    padding: 0;
-    width: 100%;
   }
-  .navbar_dark .offcanvas-body ul li {
-    background-color: #21263d;
-    padding: 10px 20px 10px 20px;
-    margin-top: 10px;
-    width: 100%;
+  .navbar_dark .content_navbar-small .content_menu-desplegable {
+    background-color: white;
+    transition: 0.5s ease;
+    visibility: inherit;
+    width: 300px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0%;
+    position: fixed;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu {
+    display: flex;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu h4 {
+    color: black;
+    height: 30px;
+    padding-top: 25px;
+  }
+  .navbar_dark .content_navbar-small .content_menu-desplegable .content_menu .cerrar {
+    width: 20px;
+  }
+  .navbar_dark .content_navbar-small .content_enlaces-small ul {
+    display: block;
+  }
+  .navbar_dark .content_navbar-small .content_enlaces-small ul li {
+    padding: 10px;
+    width: 90%;
+    background-color: black;
+    margin-top: 15px;
     border-radius: 5px;
+  }
+  .navbar_dark .content_navbar-small .content_enlaces-small ul li a {
+    color: white;
   }
 }
 
@@ -705,7 +667,7 @@ header {
     margin-top: 2rem;
   }
   .content_about-me .content_info h1 {
-    margin-top: 0%;
+    margin-top: 5.5rem;
   }
   .content_about-me .content_info .content_icon {
     display: none;
@@ -724,7 +686,7 @@ header {
     margin-top: 2rem;
   }
   .content_about-me .content_info h1 {
-    margin-top: 0%;
+    margin-top: 5.5rem;
   }
   .content_about-me .content_info .content_icon {
     display: none;
@@ -777,7 +739,7 @@ header {
     margin-top: 2rem;
   }
   .content_about-me-dark .content_info h1 {
-    margin-top: 0%;
+    margin-top: 5.5rem;
   }
   .content_about-me-dark .content_info .content_icon {
     display: none;
@@ -796,7 +758,7 @@ header {
     margin-top: 2rem;
   }
   .content_about-me-dark .content_info h1 {
-    margin-top: 0%;
+    margin-top: 5.5rem;
   }
   .content_about-me-dark .content_info .content_icon {
     display: none;
@@ -1147,7 +1109,6 @@ header {
 }
 .content_contact .contact .content_icon img {
   width: 30px;
-  filter: invert(100%);
 }
 .content_contact .contact {
   background-color: black;
@@ -1189,6 +1150,10 @@ header {
   .section_contact .content_all-contact .content_contact .contact {
     margin-top: 2rem;
     width: auto;
+  }
+  .section_contact .content_all-contact .content_contact .contact .content_icon img {
+    position: absolute;
+    filter: invert(100%);
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -1266,6 +1231,9 @@ header {
   .section_contact-dark .content_all-contact .content_contact .contact {
     margin-top: 2rem;
     width: auto;
+  }
+  .section_contact-dark .content_all-contact .content_contact .contact .content_icon img {
+    position: absolute;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
