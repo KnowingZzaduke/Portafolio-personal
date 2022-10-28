@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .section_skill{
-    background-color: v.$gris;
+    background: v.$gris;
     height: 500px;
 }
 
@@ -93,7 +93,7 @@
 
 
 .section_skill-dark{
-    background-color: v.$azul-oscuro;
+    background-color: v.$negro;
     height: 500px;
     .content_all-skill{
         width: 90%;

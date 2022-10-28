@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .section_proyects{
-    background: v.$gris;
+    background: v.$blanco;
     height: auto;
 }
 .content_all-proyects{
@@ -53,6 +53,12 @@
             color: v.$blanco;
             text-align: center;
             margin-top: 3rem;
+        }
+        
+        p{
+            color: v.$blanco;
+            text-align: center;
+            margin-top: 10px;
         }
 
         .content_icons{
@@ -118,7 +124,7 @@
 }
 
 .section_proyects-dark{
-    background-color: v.$negro;
+    background-color: v.$azul-oscuro;
     height: 600px;
     .content_all-proyects{
         width: 75%;

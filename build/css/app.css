@@ -770,7 +770,7 @@ header {
 }
 
 .section_skill {
-  background-color: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(240, 240, 247) 0%, rgb(227, 232, 233) 100%);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(240, 240, 247) 0%, rgb(227, 232, 233) 100%);
   height: 500px;
 }
 
@@ -843,7 +843,7 @@ header {
 }
 
 .section_skill-dark {
-  background-color: #21263d;
+  background-color: black;
   height: 500px;
 }
 .section_skill-dark .content_all-skill {
@@ -913,7 +913,7 @@ header {
 }
 
 .section_proyects {
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(240, 240, 247) 0%, rgb(227, 232, 233) 100%);
+  background: white;
   height: auto;
 }
 
@@ -955,6 +955,11 @@ header {
   color: white;
   text-align: center;
   margin-top: 3rem;
+}
+.content_proyects .proyect p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
 }
 .content_proyects .proyect .content_icons {
   text-align: center;
@@ -1002,7 +1007,7 @@ header {
 }
 
 .section_proyects-dark {
-  background-color: black;
+  background-color: #21263d;
   height: 600px;
 }
 .section_proyects-dark .content_all-proyects {
@@ -1131,6 +1136,7 @@ header {
 }
 .content_contact .contact .content_info-contact p {
   color: white;
+  left: 0%;
 }
 .content_contact .contact .content_info-contact a {
   text-decoration: none;
