@@ -77,9 +77,6 @@ sections.forEach(item =>item.addEventListener('click', section));
             if(altura > distancia.top){
                 video.setAttribute('autoplay', '');
                 video.setAttribute('muted', '');
-            }else if(distancia.top < altura){
-                video.setAttribute('autoplay', '');
-                video.setAttribute('muted', '');
             }
         });
    
