@@ -26,7 +26,6 @@ contains.addEventListener('click', function(event){
         skill.classList.replace('section_skill' , 'section_skill-dark');
         proyect.classList.replace('section_proyects', 'section_proyects-dark');
         contact.classList.replace('section_contact' , 'section_contact-dark');
-        // cerrar.classList.replace('btn-close-white', 'btn-close-black');
         logoBlack.style.display = ('none');
         logoWhite.style.display = ('block');
 }
@@ -42,7 +41,6 @@ contains2.addEventListener('click', function(event2){
         skill.classList.replace('section_skill-dark', 'section_skill');
         proyect.classList.replace('section_proyects-dark', 'section_proyects',);
         contact.classList.replace('section_contact-dark', 'section_contact');
-        // cerrar.classList.replace('btn-close-black', 'btn-close-white');
         logoWhite.style.display = ('none');
         logoBlack.style.display = ('block');
     }
