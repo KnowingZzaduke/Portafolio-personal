@@ -72,6 +72,8 @@ sections.forEach(item =>item.addEventListener('click', section));
         videos.forEach(video => {
             let altura = window.innerHeight + 132;
             let distancia = video.getBoundingClientRect();
+            console.log(altura);
+            console.log(distancia)
             if(distancia.top = altura){
                 video.setAttribute('autoplay', 'muted');
             }
