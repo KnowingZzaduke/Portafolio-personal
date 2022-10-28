@@ -39,7 +39,7 @@ header{
             text-decoration: underline;
             color: gray;
             transform: scale(1.1);
-            transition: tex-decoration 2s;
+            transition: text-decoration 2s;
         }
     }
 
@@ -83,6 +83,8 @@ header{
                 top: 0; 
                 bottom: 0%;
                 position: fixed;
+                
+
 
                 .content_menu{
                     display: flex;
@@ -194,6 +196,7 @@ header{
     font-family: v.$fuente-titulo;
     justify-content: center;
     height: 80px;
+    z-index: 1;
     
     
    

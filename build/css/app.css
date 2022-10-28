@@ -363,7 +363,7 @@ header {
   text-decoration: underline;
   color: gray;
   transform: scale(1.1);
-  transition: tex-decoration 2s;
+  transition: text-decoration 2s;
 }
 .navbar img {
   width: 30px;
@@ -486,6 +486,7 @@ header {
   font-family: "PT Sans", sans-serif, "Roboto", sans-serif, "Source Sans Pro", sans-serif;
   justify-content: center;
   height: 80px;
+  z-index: 1;
 }
 .navbar_dark a {
   text-decoration: none;
@@ -1109,6 +1110,7 @@ header {
 }
 .content_contact .contact .content_icon img {
   width: 30px;
+  filter: invert(100%);
 }
 .content_contact .contact {
   background-color: black;
@@ -1152,7 +1154,6 @@ header {
     width: auto;
   }
   .section_contact .content_all-contact .content_contact .contact .content_icon img {
-    position: absolute;
     filter: invert(100%);
   }
 }
@@ -1231,9 +1232,6 @@ header {
   .section_contact-dark .content_all-contact .content_contact .contact {
     margin-top: 2rem;
     width: auto;
-  }
-  .section_contact-dark .content_all-contact .content_contact .contact .content_icon img {
-    position: absolute;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
