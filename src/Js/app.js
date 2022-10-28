@@ -69,16 +69,21 @@ sections.forEach(item =>item.addEventListener('click', section));
 // Función para agregar autoplay a los videos
     window.addEventListener('scroll', function(){
         let videos = document.querySelectorAll('.content_logo video');
+        let skills = this.document.querySelectorAll('.content_skills p');
         videos.forEach(video => {
-            let altura = window.innerHeight;
+            let altura = window.innerHeight + 132;
             let distancia = video.getBoundingClientRect();
-            if(distancia.bottom < altura){
+            console.log(altura);
+            console.log(distancia)
+            if(distancia.top = altura){
                 video.setAttribute('autoplay', '');
             }
         });
    
 })
 
+
+//Función para agregarle una animación a los p
 
 
 
