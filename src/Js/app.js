@@ -76,7 +76,7 @@ sections.forEach(item =>item.addEventListener('click', section));
             console.log(altura);
             console.log(distancia)
             if(distancia.top = altura){
-                video.setAttribute('autoplay', '');
+                video.setAttribute('autoplay', 'muted');
             }
         });
    
