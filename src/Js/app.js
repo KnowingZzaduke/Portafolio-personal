@@ -67,23 +67,21 @@ sections.forEach(item =>item.addEventListener('click', section));
 
 
 // Función para agregar autoplay a los videos
-//     window.addEventListener('scroll', function(){
-//         let videos = document.querySelectorAll('.content_logo video');
-//         videos.forEach(video => {
-//             let altura = window.innerHeight - 24;
-//             let distancia = video.getBoundingClientRect();
-//             console.log(altura)
-//             console.log(distancia)
-//             if(altura < distancia.top){
-//                 video.setAttribute('autoplay', '');
-//                 video.setAttribute('muted', '');
-//             }
-//         });
+    window.addEventListener('scroll', function(){
+        let videos = document.querySelectorAll('.content_logo video');
+        videos.forEach(video => {
+            let altura = window.innerHeight - 24;
+            let distancia = video.getBoundingClientRect();
+            console.log(altura)
+            console.log(distancia)
+            if(altura > distancia.top){
+                video.play();
+            }
+        });
    
-// })
+})
 
 
-//Función para agregarle una animación a los p
 
 
 
