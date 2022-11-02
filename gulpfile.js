@@ -17,15 +17,15 @@ function css(done) {
     done();
 }
 //Cambiar formato de imágenes a .webp
-function versionWebp(done){
-    const opciones = {
-        quality: 100
-    }
-    src("src/img/**/*.{png,jpg}")
-    .pipe(dest('build/img'))
-    .pipe(webp(opciones))
-    done()
-}
+// function versionWebp(done){
+//     const opciones = {
+//         quality: 100
+//     }
+//     src("src/img/**/*.{png,jpg}")
+//     .pipe(dest('build/img'))
+//     .pipe(webp(opciones))
+//     done()
+// }
 
 // agregar un watch para escuchar por los cambios realizados
 function dev (done){
