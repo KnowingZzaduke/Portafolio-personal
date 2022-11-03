@@ -6,7 +6,7 @@ const plumber = require('gulp-plumber'); //Cargamos el plumber
 
 // webp
 
-const webp = require('gulp-webp');
+// const webp = require('gulp-webp');
 //Compilar sass con tarea de gulp
 function css(done) {
     // src("src/scss/app.scss") Identificar un archivo de sass
