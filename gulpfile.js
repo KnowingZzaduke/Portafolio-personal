@@ -1,7 +1,7 @@
-const { src, dest, watch, parallel} = require('gulp'); //Cargamos el módulo gulp
+const { src, dest, watch} = require("gulp"); //Cargamos el módulo gulp
 
 // css
-const sass = require('gulp-sass')(require('sass')); //cargamos el plugin de gulp sass
+const sass = require("gulp-sass")(require('sass')); //cargamos el plugin de gulp sass
 const plumber = require('gulp-plumber'); //Cargamos el plumber
 
 // webp
@@ -34,7 +34,6 @@ function dev (done){
     done();
 }
 
-//Realizamos el llamado de las tareas mediante exports, esta sintaxis hace parte de node.js
+//Realizamos el llamado de las tareas mediante exports
 exports.css = css;
-// exports.dev = parallel (versionWebp, dev); //Pararell sirve para llamar tareas una detras de la otra
 exports.dev = dev;
