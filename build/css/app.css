@@ -919,7 +919,7 @@ header {
 
 .content_all-proyects {
   width: 75%;
-  height: 560px;
+  height: auto;
 }
 
 .content_all-proyects .h {
@@ -932,8 +932,10 @@ header {
 }
 
 .content_proyects {
-  display: flex;
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2.2rem;
+  margin-bottom: 3rem;
 }
 
 .content_proyects .proyect {

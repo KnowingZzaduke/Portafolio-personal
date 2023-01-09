@@ -78,7 +78,6 @@ sections.forEach(item =>item.addEventListener('click', section));
                 video.play();
             }
         });
-   
 })
 
 
