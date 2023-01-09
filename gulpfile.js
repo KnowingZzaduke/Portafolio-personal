@@ -4,9 +4,6 @@ const { src, dest, watch} = require("gulp"); //Cargamos el módulo gulp
 const sass = require("gulp-sass")(require('sass')); //cargamos el plugin de gulp sass
 const plumber = require('gulp-plumber'); //Cargamos el plumber
 
-// webp
-
-// const webp = require('gulp-webp');
 //Compilar sass con tarea de gulp
 function css(done) {
     // src("src/scss/app.scss") Identificar un archivo de sass
@@ -16,16 +13,7 @@ function css(done) {
     .pipe(dest("build/css")); //Almacenar el archivo de sass
     done();
 }
-//Cambiar formato de imágenes a .webp
-// function versionWebp(done){
-//     const opciones = {
-//         quality: 100
-//     }
-//     src("src/img/**/*.{png,jpg}")
-//     .pipe(dest('build/img'))
-//     .pipe(webp(opciones))
-//     done()
-// }
+
 
 // agregar un watch para escuchar por los cambios realizados
 function dev (done){
