@@ -72,15 +72,8 @@ sections.forEach(item =>item.addEventListener('click', section));
         videos.forEach(video => {
             let altura = window.innerHeight - 24;
             let distancia = video.getBoundingClientRect();
-            console.log(altura)
-            console.log(distancia)
             if(altura > distancia.top){
                 video.play();
             }
         });
 })
-
-
-
-
-
