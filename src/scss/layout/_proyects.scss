@@ -94,7 +94,7 @@
 
 .section_proyects{
     @include m.phone{
-        height: 1220px;
+        height: auto;
         .content_all-proyects{
             width: 300px;
             .content_proyects{
@@ -110,7 +110,7 @@
     }
 
     @include m.tablet{
-        height: 1220px;
+        height: auto;
         .content_all-proyects{
             .content_proyects{
                 display: block; 
@@ -211,7 +211,7 @@
 
 .section_proyects-dark{
     @include m.phone{
-        height: 1220px;
+        height: auto;
         .content_all-proyects{
             width: 300px;
             .content_proyects{
@@ -227,7 +227,7 @@
     }
 
     @include m.tablet{
-        height: 1220px;
+        height: auto;
         .content_all-proyects{
             .content_proyects{
                 display: block; 
