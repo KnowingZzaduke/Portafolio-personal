@@ -935,7 +935,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 2.2rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .content_proyects .proyect {
@@ -1010,11 +1010,11 @@ header {
 
 .section_proyects-dark {
   background-color: #21263d;
-  height: 600px;
+  height: auto;
 }
 .section_proyects-dark .content_all-proyects {
   width: 75%;
-  height: 560px;
+  height: auto;
 }
 .section_proyects-dark .content_all-proyects .h {
   padding-top: 4rem;
@@ -1026,8 +1026,10 @@ header {
   color: white;
 }
 .section_proyects-dark .content_proyects {
-  display: flex;
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2.2rem;
+  padding-bottom: 3rem;
 }
 .section_proyects-dark .content_proyects .proyect {
   background-color: black;
