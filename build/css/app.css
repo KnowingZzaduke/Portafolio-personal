@@ -771,12 +771,13 @@ header {
 
 .section_skill {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(240, 240, 247) 0%, rgb(227, 232, 233) 100%);
-  height: 500px;
+  height: auto;
 }
 
 .content_all-skill {
   width: 90%;
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 
 .content_all-skill h1 {
@@ -789,7 +790,9 @@ header {
 }
 
 .content_skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
 }
 .content_skills div {
   text-align: center;
@@ -844,11 +847,12 @@ header {
 
 .section_skill-dark {
   background-color: black;
-  height: 500px;
+  height: auto;
 }
 .section_skill-dark .content_all-skill {
   width: 90%;
   padding: 1rem;
+  padding-bottom: 3rem;
 }
 .section_skill-dark .content_all-skill h1 {
   font-size: white;
@@ -860,7 +864,9 @@ header {
   color: white;
 }
 .section_skill-dark .content_skills {
-  display: flex;
+  display: gird;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
 }
 .section_skill-dark .content_skills div {
   text-align: center;
@@ -873,6 +879,9 @@ header {
 .section_skill-dark .content_skills div img {
   width: 8rem;
   cursor: pointer;
+}
+.section_skill-dark .content_skills div .git {
+  filter: invert(100);
 }
 .section_skill-dark .content_skills div p {
   color: white;

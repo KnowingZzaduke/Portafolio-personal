@@ -3,12 +3,13 @@
 
 .section_skill{
     background: v.$gris;
-    height: 500px;
+    height: auto;
 }
 
 .content_all-skill{
     width: 90%;
     padding: 1rem;
+    padding-bottom: 3rem;
 }
 
 .content_all-skill{
@@ -23,7 +24,9 @@
 }
 
 .content_skills{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
 
     div{
         text-align: center;
@@ -94,10 +97,11 @@
 
 .section_skill-dark{
     background-color: v.$negro;
-    height: 500px;
+    height: auto;
     .content_all-skill{
         width: 90%;
         padding: 1rem;
+        padding-bottom: 3rem;
     }
     
     .content_all-skill{
@@ -113,7 +117,9 @@
     }
     
     .content_skills{
-        display: flex;
+        display: gird;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2rem;
     }
     
     .content_skills{
@@ -131,6 +137,10 @@
             img{
                 width: v.$mediano;
                 cursor: pointer;
+            }
+
+            .git{
+                filter: invert(100);
             }
             p{
                 color: v.$blanco;
